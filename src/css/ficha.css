@@ -74,6 +74,8 @@
 .swiper-button-prev:hover, .swiper-button-next:hover{
   transform:scale(.9);
   transition:.5s;
+  background:#007aff;
+  color:#fff;
 }
 
 .card-swiper-slide{
@@ -149,4 +151,20 @@
 .img-section-4-grid:hover{
   transform:scale(1.1) rotate(3deg);
   transition:.5s;
+}
+
+
+@media screen and (min-width:0px) and (max-width:992px){
+  .text-ds-model-car{
+    width:100%;
+  }
+
+  .title-ds-model-car{
+   font-size:28px;
+  }
+
+  .container-img-overflow-section-4{
+    height:225px;
+    margin-bottom: 30px;
+  }
 }

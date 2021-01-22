@@ -4,7 +4,8 @@ import logoHeader from '../img/logo.png';
 import navMenuHeader from '../img/gray.png';
 import {
   BrowserRouter as Router,
-  Link
+  Link,
+  NavLink
   } from 'react-router-dom';
 
 const Header = ()=>{
@@ -34,8 +35,8 @@ const Header = ()=>{
 
     <div className="general-items-header">
       <img className="img-logo-header" src={logoHeader} alt="logo-header" />
-         <Link to="/"><h1 className="title-model-header">Modelos</h1></Link>
-          <Link to="/ficha-tecnica"><h1 className="title-model-header">Ficha técnica</h1></Link>
+         <NavLink to="/" className="title-model-header span" activeClassName="active">Modelos</NavLink>
+          <NavLink to="/ficha-tecnica" className="title-model-header">Ficha técnica</NavLink>
       </div>
 
       <div className="general-nav-menu-header">
@@ -49,7 +50,7 @@ const Header = ()=>{
        <div className="container general-container-aside-content">
          <h1 onClick={handleDisappear}  className="close-times-title"><i className="icon-close-aside-menu fas fa-times"></i>Cerrar</h1>
           <Link to="/ficha-tecnica"><h1 className="title-aside-menu">Ficha técnica</h1></Link>
-            <Link to="/ficha-tecnica"><h1 className="title-aside-menu">Modelos</h1></Link>
+            <Link to="/"><h1 className="title-aside-menu">Modelos</h1></Link>
              <Link to="/ficha-tecnica"><h1 className="title-aside-menu">Servicios y Accesorios</h1></Link>
             <Link to="/ficha-tecnica"><h1 className="title-aside-menu">Financiación</h1></Link>
         </div>

@@ -17,8 +17,18 @@
   font-size:16px;
   color:#191919;
   font-family:'Poppins', sans-serif;
+  transition:.5s;
 }
 
+.title-model-header{
+  display:inline-block;
+  margin:0px 30px;
+  font-size:16px;
+  color:#191919;
+  font-family:'Poppins', sans-serif;
+  color:#000;
+  transition:.5s;
+}
 
 .general-items-header{
   display:inline-block;
@@ -64,6 +74,14 @@
 .icon-close-aside-menu{
   margin-right:10px;
   color:#373737;
+}
+
+.active{
+  color:#007aff;
+}
+
+.span{
+  color:#007aff !important;
 }
 
 @media screen and (min-width:0px) and (max-width:992px){
