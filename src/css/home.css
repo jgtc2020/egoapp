@@ -1,0 +1,38 @@
+*{
+    scroll-behavior: smooth;
+  }
+  body::-webkit-scrollbar{
+  /* solo oculta su visualizacion */
+  display: none;
+}
+a:hover, a:visited, a:link, a:active{
+      color:none;
+      cursor: pointer;
+      text-decoration: none;
+  }
+
+  a:link:hover{
+    text-decoration: none;
+  }
+   button:focus{
+     outline:inherit !important;
+   }
+   input:focus{
+     outline:inherit !important;
+   }
+
+   .title-hero{
+     padding-top:130px;
+     padding-bottom:80px;
+     color:#373737;
+     font-weight:bolder;
+     font-family:'Poppins', sans-serif;
+   }
+
+   .general-container-models-cars{
+     padding:25px 0px;
+   }
+
+   .item-card{
+     text-align:center;
+   }

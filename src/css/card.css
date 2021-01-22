@@ -1,0 +1,47 @@
+.card-item-container-models-cars{
+  padding:50px 0px;
+  width:100%;
+  transition:.5s;
+}
+
+.card-item-container-models-cars:hover{
+  transform:translateY(-15px);
+  transition:.5s;
+}
+
+.title-card-item-models-cars{
+  font-family:'Poppins', sans-serif;
+  font-size:30px;
+  font-weight: bold;
+}
+
+.title-price-card-item-models-cars{
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px 0px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #373737;
+}
+
+.img-card-item-models-cars{
+  width:100%;
+  margin-top:15px;
+}
+
+.btn-card-models-cars{
+  margin-top: 15px;
+  border-radius:60px;
+  border:none;
+  padding:5px 40px;
+  font-family:'Poppins', sans-serif;
+  background:#fff;
+  color:#000;
+  transition:.5s;
+  box-shadow:1px 10px 15px rgba(17,23,21,.1)
+}
+
+.btn-card-models-cars:hover{
+  background:linear-gradient(to left, #007aff, #7968ec);
+  transition:.5s;
+  color:#fff;
+}
