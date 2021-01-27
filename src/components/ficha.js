@@ -1,8 +1,10 @@
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
-import React from 'react';
+import React, {useEffect} from 'react';
 import {AnimatePresence, motion} from 'framer-motion';
 import Loader from '../components/loader.js';
 import Header from '../components/header.js';
@@ -19,6 +21,11 @@ import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autopl
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]);
 
 const Ficha = ()=>{
+
+  useEffect(() =>{
+    Aos.init({duration: 2000});
+  }, []);
+
   return(
     <React.Fragment>
     <motion.div
@@ -31,10 +38,10 @@ const Ficha = ()=>{
 
     <div className="container">
     <div className="row">
-    <div className="col-12 col-lg-6">
+    <div className="col-12 col-lg-6" data-aos="fade-right">
     <img className="img-car-ficha" src={car4} alt="imagem carro" />
     </div>
-    <div className="col-12 col-lg-6">
+    <div className="col-12 col-lg-6" data-aos="fade-left">
     <h1 className="title-sm-model-car">Hilux DX/SR</h1>
     <h1 className="title-ds-model-car">Preparada para cualquier desafío</h1>
     <p className="text-ds-model-car">Texto lorem ipsum dolor sit amet orem ipsum dolor sit amet. lorem ipsum dolor sit amet orem ipsum dolor sit amet lorem ipsum dolor sit amet orem ipsum dolor sit amet.</p>
@@ -52,6 +59,7 @@ const Ficha = ()=>{
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
       loop={true}
+      data-aos="fade-up"
     >
       <SwiperSlide>
       <div className="card-swiper-slide">
@@ -130,11 +138,11 @@ const Ficha = ()=>{
 
     <div className="container general-section-3">
       <div className="row">
-        <div className="col-lg-6 col-text-section-3">
+        <div className="col-lg-6 col-text-section-3" data-aos="fade-right">
           <h1 className="title-section-3-grid">Buena alternación</h1>
           <p className="text-section-3-grid">Texto lorem ipsum dolor sit amet orem ipsum dolor sit amet. lorem ipsum dolor sit amet orem ipsum dolor sit amet lorem ipsum dolor sit amet orem ipsum dolor sit amet.</p>
         </div>
-        <div className="col-lg-6 col-img-section-3">
+        <div className="col-lg-6 col-img-section-3" data-aos="fade-left">
         <img className="img-section-3-grid" src={imgs3} alt="imagen de auto"/>
         </div>
       </div>
@@ -143,12 +151,12 @@ const Ficha = ()=>{
 
     <div className="container general-section-4">
       <div className="row">
-        <div className="col-lg-6 col-img-section-4">
+        <div className="col-lg-6 col-img-section-4" data-aos="fade-right">
         <div className="container-img-overflow-section-4">
         <img className="img-section-4-grid" src={imgs4} alt="imagen de auto"/>
         </div>
         </div>
-        <div className="col-lg-6 col-text-section-4">
+        <div className="col-lg-6 col-text-section-4" data-aos="fade-left">
         <h1 className="title-section-4-grid">Buena alternación</h1>
         <p className="text-section-4-grid">Texto lorem ipsum dolor sit amet orem ipsum dolor sit amet. lorem ipsum dolor sit amet orem ipsum dolor sit amet lorem ipsum dolor sit amet orem ipsum dolor sit amet.</p>
         </div>

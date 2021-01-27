@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from '../components/header.js';
 import Filter from '../components/filter.js';
 import Card from '../components/card.js';
@@ -17,9 +17,15 @@ import {
   Link,
   NavLink
 } from 'react-router-dom';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = ()=>{
+
+  useEffect(() =>{
+    Aos.init({duration: 2000});
+  }, []);
+
   return(
       <React.Fragment>
 
@@ -41,28 +47,28 @@ const Home = ()=>{
         <div className="general-container-models-cars">
           <div className="container">
             <div className="row">
-              <div className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
+              <div data-aos="fade-up" data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card scrollflow -slide-top -opacity">
                 <Card title="Etios" price="2019 | $815.900" img={car1}/>
               </div>
-              <div className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
+              <div data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
                <Card title="Yaris" price="2020 | $1.030.900" img={car2}/>
               </div>
-              <div className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
+              <div data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
                <Card title="Corolla" price="2018 | $1.430.700" img={car3}/>
               </div>
-              <div className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
+              <div data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
                <Card title="Prius" price="2019 | $2.882.000" img={car4}/>
               </div>
-              <div className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
+              <div data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
                <Card title="Prius" price="2019 | $2.882.000" img={car1}/>
               </div>
-              <div className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
+              <div data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
                <Card title="Prius" price="2019 | $2.882.000" img={car3}/>
               </div>
-              <div className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
+              <div data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
                <Card title="Prius" price="2019 | $2.882.000" img={car2}/>
               </div>
-              <div className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
+              <div data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
                <Card title="Prius" price="2019 | $2.882.000" img={car1}/>
               </div>
 
