@@ -13,6 +13,12 @@
   font-family:'Poppins', sans-serif;
   font-size:30px;
   font-weight: bold;
+  transition:.5s;
+}
+
+.card-item-container-models-cars:hover .title-card-item-models-cars{
+  color:#007aff;
+  transition:.5s;
 }
 
 .title-price-card-item-models-cars{
@@ -37,11 +43,22 @@
   background:#fff;
   color:#000;
   transition:.5s;
-  box-shadow:1px 10px 15px rgba(17,23,21,.1)
+  box-shadow:1px 10px 15px rgba(17,23,21,.1);
 }
 
 .btn-card-models-cars:hover{
   background:linear-gradient(to left, #007aff, #7968ec);
   transition:.5s;
   color:#fff;
+}
+
+.general-container-card-es{
+  width:100%;
+  height:100%;
+  background:rgba(255,255,255,.4);
+  z-index:10000;
+  position:fixed;
+  opacity:0;
+  visibility:hidden;
+  transition:.5s;
 }

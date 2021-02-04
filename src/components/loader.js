@@ -11,7 +11,7 @@ const Loader = ()=>{
       containerSlide.style.transition = '.5s';
     };
 
-    setTimeout(desappear, 800);
+    setTimeout(desappear, 1500);
 
   return(
     <React.Fragment>
