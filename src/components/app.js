@@ -2,6 +2,8 @@ import React from 'react';
 import Home from '../components/home.js';
 import Ficha from '../components/ficha.js';
 import Header from '../components/header.js';
+import Cars from '../components/cars.js';
+import CarsT from '../components/carsT.js';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,6 +22,9 @@ const App = ()=>{
    </Route>
    <Route path="/ficha-tecnica" exact>
    <Ficha />
+   </Route>
+   <Route path="/autos" exact>
+   <Home />
    </Route>
    </Switch>
    </Router>

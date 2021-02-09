@@ -63,6 +63,7 @@
   font-size:20px;
   color:#373737;
   margin-bottom:20px;
+  cursor:pointer;
 }
 
 .title-aside-menu{
@@ -78,10 +79,6 @@
 
 .active{
   color:#007aff;
-}
-
-.span{
-  color:#007aff !important;
 }
 
 @media screen and (min-width:0px) and (max-width:992px){

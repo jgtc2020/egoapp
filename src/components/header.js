@@ -35,8 +35,8 @@ const Header = ()=>{
 
     <div className="general-items-header">
       <img className="img-logo-header" src={logoHeader} alt="logo-header" />
-         <NavLink to="/" className="title-model-header span" activeClassName="active">Modelos</NavLink>
-          <NavLink to="/ficha-tecnica" className="title-model-header">Ficha técnica</NavLink>
+         <NavLink to="/" className="title-model-header span" exact activeClassName="active" to="/">Modelos</NavLink>
+          <NavLink to="/ficha-tecnica" className="title-model-header"  exact activeClassName="active" to="/ficha-tecnica">Ficha técnica</NavLink>
       </div>
 
       <div className="general-nav-menu-header">
@@ -49,10 +49,10 @@ const Header = ()=>{
       <div className="general-aside-menu-ds">
        <div className="container general-container-aside-content">
          <h1 onClick={handleDisappear}  className="close-times-title"><i className="icon-close-aside-menu fas fa-times"></i>Cerrar</h1>
-          <Link to="/ficha-tecnica"><h1 className="title-aside-menu">Ficha técnica</h1></Link>
-            <Link to="/"><h1 className="title-aside-menu">Modelos</h1></Link>
-             <Link to="/ficha-tecnica"><h1 className="title-aside-menu">Servicios y Accesorios</h1></Link>
-            <Link to="/ficha-tecnica"><h1 className="title-aside-menu">Financiación</h1></Link>
+          <NavLink to="/ficha-tecnica" exact activeClassName="active" to="/ficha-tecnica"><h1 className="title-aside-menu">Ficha técnica</h1></NavLink>
+            <NavLink to="/"><h1 className="title-aside-menu">Modelos</h1></NavLink>
+             <NavLink to="/ficha-tecnica"><h1 className="title-aside-menu">Servicios y Accesorios</h1></NavLink>
+            <NavLink to="/ficha-tecnica"><h1 className="title-aside-menu">Financiación</h1></NavLink>
         </div>
       </div>
     </div>
