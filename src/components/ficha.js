@@ -60,6 +60,26 @@ const Ficha = ()=>{
       onSlideChange={() => console.log('slide change')}
       loop={true}
       data-aos="fade-up"
+      breakpoints={{
+    // when window width is >= 640px
+    "@0.00": {
+      slidesPerView: 1,
+        spaceBetween: 10,
+    },
+    '@0.75': {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is >= 768px
+    '@1.00': {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    '@1.50': {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  }}
     >
       <SwiperSlide>
       <div className="card-swiper-slide">
@@ -138,11 +158,11 @@ const Ficha = ()=>{
 
     <div className="container general-section-3">
       <div className="row">
-        <div className="col-lg-6 col-text-section-3" data-aos="fade-right">
+        <div className="col-lg-6 col-text-section-3">
           <h1 className="title-section-3-grid">Buena alternación</h1>
           <p className="text-section-3-grid">Texto lorem ipsum dolor sit amet orem ipsum dolor sit amet. lorem ipsum dolor sit amet orem ipsum dolor sit amet lorem ipsum dolor sit amet orem ipsum dolor sit amet.</p>
         </div>
-        <div className="col-lg-6 col-img-section-3" data-aos="fade-left">
+        <div className="col-lg-6 col-img-section-3">
         <img className="img-section-3-grid" src={imgs3} alt="imagen de auto"/>
         </div>
       </div>
@@ -151,12 +171,12 @@ const Ficha = ()=>{
 
     <div className="container general-section-4">
       <div className="row">
-        <div className="col-lg-6 col-img-section-4" data-aos="fade-right">
+        <div className="col-lg-6 col-img-section-4">
         <div className="container-img-overflow-section-4">
         <img className="img-section-4-grid" src={imgs4} alt="imagen de auto"/>
         </div>
         </div>
-        <div className="col-lg-6 col-text-section-4" data-aos="fade-left">
+        <div className="col-lg-6 col-text-section-4">
         <h1 className="title-section-4-grid">Buena alternación</h1>
         <p className="text-section-4-grid">Texto lorem ipsum dolor sit amet orem ipsum dolor sit amet. lorem ipsum dolor sit amet orem ipsum dolor sit amet lorem ipsum dolor sit amet orem ipsum dolor sit amet.</p>
         </div>

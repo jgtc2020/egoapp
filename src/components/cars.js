@@ -55,7 +55,7 @@ const Cars = ()=>{
           <h1 className="title-card-item-models-cars">Etios</h1>
           <h2 className="title-price-card-item-models-cars">$1.030.900</h2>
           <img className="img-card-item-models-cars" src={car1} alt="imagen de un carro" />
-          <button className="btn-card-models-cars" type="button" name="button" onClick={handleAppear}>Ver modelo</button>
+          <button className="btn-card-models-cars" type="button" onClick={handleAppear}>Ver modelo</button>
         </div>
         </div>
         <div data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
