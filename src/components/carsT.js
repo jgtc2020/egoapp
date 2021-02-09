@@ -71,19 +71,44 @@ const CarsT = ()=>{
         </div>
         </div>
         <div data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
-         <Card title="Prius" price="2019 | $2.882.000" img={car4}/>
+        <div className="card-item-container-models-cars">
+          <h1 className="title-card-item-models-cars">Axis</h1>
+          <h2 className="title-price-card-item-models-cars">$1.040.000</h2>
+          <img className="img-card-item-models-cars" src={car4} alt="imagen de un carro" />
+          <button className="btn-card-models-cars" type="button" name="button" onClick={handleAppear}>Ver modelo</button>
+        </div>
         </div>
         <div data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
-         <Card title="Prius" price="2019 | $2.882.000" img={car1}/>
+        <div className="card-item-container-models-cars">
+          <h1 className="title-card-item-models-cars">Axis</h1>
+          <h2 className="title-price-card-item-models-cars">$1.040.000</h2>
+          <img className="img-card-item-models-cars" src={car1} alt="imagen de un carro" />
+          <button className="btn-card-models-cars" type="button" name="button" onClick={handleAppear}>Ver modelo</button>
+        </div>
         </div>
         <div data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
-         <Card title="Prius" price="2019 | $2.882.000" img={car3}/>
+        <div className="card-item-container-models-cars">
+          <h1 className="title-card-item-models-cars">Axis</h1>
+          <h2 className="title-price-card-item-models-cars">$1.040.000</h2>
+          <img className="img-card-item-models-cars" src={car3} alt="imagen de un carro" />
+          <button className="btn-card-models-cars" type="button" name="button" onClick={handleAppear}>Ver modelo</button>
+        </div>
         </div>
         <div data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
-         <Card title="Prius" price="2019 | $2.882.000" img={car2}/>
+        <div className="card-item-container-models-cars">
+          <h1 className="title-card-item-models-cars">Axis</h1>
+          <h2 className="title-price-card-item-models-cars">$1.040.000</h2>
+          <img className="img-card-item-models-cars" src={car2} alt="imagen de un carro" />
+          <button className="btn-card-models-cars" type="button" name="button" onClick={handleAppear}>Ver modelo</button>
+        </div>
         </div>
         <div data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card">
-         <Card title="Prius" price="2019 | $2.882.000" img={car1}/>
+        <div className="card-item-container-models-cars">
+          <h1 className="title-card-item-models-cars">Axis</h1>
+          <h2 className="title-price-card-item-models-cars">$1.040.000</h2>
+          <img className="img-card-item-models-cars" src={car1} alt="imagen de un carro" />
+          <button className="btn-card-models-cars" type="button" name="button" onClick={handleAppear}>Ver modelo</button>
+        </div>
         </div>
 
       </div>
