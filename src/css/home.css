@@ -128,3 +128,7 @@ a:hover, a:visited, a:link, a:active{
       color:#000;
       box-shadow:1px 15px 20px rgba(144,149,161,.4);
     }
+
+    .general-card{
+      margin:0px 30px !important;
+    }

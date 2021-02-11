@@ -40,25 +40,26 @@ const Home = ()=>{
       exit={{opacity: 0}}
       animate={{opacity: 1}}>
       <Header />
+      <Router>
 
         <Loader />
 
     <div className="general-container-card-ps">
-        <div className="col-lg-3">
-          <div className="card-ps">
-            <div className="container-header-card-ps">
-            <img className="img-logo-container-header-card-ps" src={logo} alt="logo egoapp" />
-             <h1 className="title-container-header-card-ps">app</h1>
-              <i onClick={handleDisappear} class="icon-close-header-card-ps fas fa-times"></i>
-              </div>
-            <div className="container-text-card-ps">
-              <h1 className="title-card-ps"></h1>
-              <h2 className="price-card-ps"></h2>
-              <img className="img-card-ps" src="" alt="imagen de un auto" />
-              <button className="btn-card-ps" type="button" name="button">Comprar</button>
+      <div className="general-card col-md-6 col-lg-3">
+        <div className="card-ps">
+          <div className="container-header-card-ps">
+          <img className="img-logo-container-header-card-ps" src={logo} alt="logo egoapp" />
+           <h1 className="title-container-header-card-ps">app</h1>
+            <i onClick={handleDisappear} class="icon-close-header-card-ps fas fa-times"></i>
             </div>
+          <div className="container-text-card-ps">
+            <h1 className="title-card-ps"></h1>
+            <h2 className="price-card-ps"></h2>
+            <img className="img-card-ps" src="" alt="imagen de un auto" />
+            <button className="btn-card-ps" type="button" name="button">Comprar</button>
           </div>
-       </div>
+        </div>
+        </div>
     </div>
 
         <div className="container general-container-title-hero">
@@ -81,6 +82,7 @@ const Home = ()=>{
 
 
 
+        </Router>
         </motion.div>
       </React.Fragment>
   )

@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/header.css';
 import logoHeader from '../img/logo.png';
 import navMenuHeader from '../img/gray.png';
+import Headroom from 'react-headroom';
 import {
   BrowserRouter as Router,
   Link,

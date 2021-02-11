@@ -153,7 +153,6 @@
   transition:.5s;
 }
 
-
 @media screen and (min-width:0px) and (max-width:992px){
   .text-ds-model-car{
     width:100%;
@@ -166,5 +165,10 @@
   .container-img-overflow-section-4{
     height:225px;
     margin-bottom: 30px;
+  }
+
+  .general-section-ficha{
+    padding-left:15px;
+    padding-right:15px;
   }
 }

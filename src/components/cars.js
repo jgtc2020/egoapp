@@ -52,7 +52,7 @@ const Cars = ()=>{
       <div className="row">
         <div data-aos="fade-up" data-aos="fade-up" className="col-12 col-md-6 col-lg-4 col-xl-3 item-card scrollflow -slide-top -opacity">
         <div className="card-item-container-models-cars">
-          <h1 className="title-card-item-models-cars">Etios</h1>
+          <h1 className="title-card-item-models-cars">Etioss</h1>
           <h2 className="title-price-card-item-models-cars">$1.030.900</h2>
           <img className="img-card-item-models-cars" src={car1} alt="imagen de un carro" />
           <button className="btn-card-models-cars" type="button" onClick={handleAppear}>Ver modelo</button>
